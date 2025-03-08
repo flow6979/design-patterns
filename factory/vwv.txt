@@ -1,0 +1,15 @@
+- What is the Factory Design Pattern?
+   - "A blueprint for creating objects" where a superclass provides an interface, and subclasses decide which class to instantiate.
+   - Promotes loose coupling by hiding the creation logic from the client and making the system more flexible and extensible.
+
+- Use Cases:
+   - Object creation with varying implementations (e.g., UI elements for different operating systems: Windows vs. Mac)
+   - Frameworks or libraries where the exact class isn’t known upfront (e.g., plugin systems)
+   - Managing families of related objects (e.g., creating different types of documents: PDF, Word, etc.)
+   - Simplifying complex object creation (e.g., hiding initialization logic for database drivers)
+   - Scenarios requiring runtime flexibility (e.g., switching between test and production implementations)
+
+- Code Explanation
+   - The Client uses the abstract Creator’s create() to get a Product, unaware of the concrete type.
+   - ConcreteCreatorA or ConcreteCreatorB’s factoryMethod() returns ConcreteProductA or ConcreteProductB, respectively.
+   - Client calls operation() on the Product, executing behavior like printing "ConcreteProductA" or "ConcreteProductB".

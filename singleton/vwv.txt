@@ -1,4 +1,6 @@
-- "one and only one instance" of the object, results in the "global control of a resource".
+- What is the Singleton Design Pattern?
+    - "one and only one instance" of the object, results in the "global control of a resource".
+
 - Use Cases:
    - Connecting to databases or external resources (only one connection pool)
    - Thread pools (centralized management of threads)
