@@ -1,0 +1,15 @@
+- What is the Abstract Factory Design Pattern?
+   - "A factory of factories" that provides an interface for creating families of related objects without specifying their concrete classes.
+   - Ensures compatibility within product families while promoting loose coupling and extensibility.
+
+- Use Cases:
+   - Creating consistent UI components across platforms (ex- buttons and windows for Windows vs. Mac)
+   - Managing related object sets in frameworks (ex- database drivers and connection pools)
+   - Producing themed product families (ex- light vs. dark theme UI elements)
+   - Supporting multiple configurations (ex- test vs. production environment objects)
+   - Abstracting hardware-specific components (ex- sensors and displays for different devices)
+
+- Code Explanation
+   - Client uses AbstractFactory to create AbstractProductA and AbstractProductB via ConcreteFactoryA or ConcreteFactoryB.
+   - ConcreteFactoryA makes ProductA1 and ProductB1; ConcreteFactoryB makes ProductA2 and ProductB2.
+   - Client calls show() on products, outputting "Product A1", "Product A2", "Product B1", "Product B2".
