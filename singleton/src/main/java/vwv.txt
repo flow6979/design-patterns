@@ -1,0 +1,7 @@
+- "one and only one instance" of the object, results in the "global control of a resource".
+- Use Cases:
+   - Connecting to databases or external resources (only one connection pool)
+   - Thread pools (centralized management of threads)
+   - Logging frameworks (one logger instance for the application)
+   - Configuration managers (single access point for app-wide settings)
+   - Cache implementations (shared memory cache across the application)
